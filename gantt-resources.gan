@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="&quot;Lofthus frukt og saft&quot; Gantt Project" company="" webLink="http://" view-date="2019-11-01" view-index="0" gantt-divider-location="450" resource-divider-location="300" version="2.8.10" locale="en_US">
+    <description/>
+    <view zooming-state="default:9" id="gantt-chart">
+        <field id="tpd3" name="Name" width="219" order="0"/>
+        <field id="tpd4" name="Begin date" width="94" order="1"/>
+        <field id="tpd5" name="End date" width="94" order="2"/>
+        <field id="tpd13" name="Resources" width="39" order="3"/>
+        <timeline><![CDATA[0]]></timeline>
+        <option id="color.recent"><![CDATA[#6666ff #00ffff #f4f4f4 #0099ff #ffff00 #333333 #666666]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="210" order="0"/>
+        <field id="1" name="Default role" width="86" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="meeting 1 with the customer, contract" color="#666666" meeting="false" start="2020-01-06" duration="10" complete="0" thirdDate="2019-11-01" thirdDate-constraint="0" priority="2" expand="true">
+            <depend id="9" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="9" name="planning of the project" color="#333333" meeting="false" start="2020-01-20" duration="16" complete="0" thirdDate="2020-01-01" thirdDate-constraint="0" expand="true"/>
+        <task id="11" name="design of the web page" color="#0099ff" meeting="false" start="2020-02-11" duration="39" complete="0" thirdDate="2020-01-01" thirdDate-constraint="0" expand="true"/>
+        <task id="14" name="coding the web page" color="#0099ff" meeting="false" start="2020-04-06" duration="35" complete="0" thirdDate="2020-01-01" thirdDate-constraint="0" expand="true"/>
+        <task id="16" name="testing of the web page" color="#0099ff" meeting="false" start="2020-05-25" duration="10" complete="0" thirdDate="2020-01-01" thirdDate-constraint="0" expand="true"/>
+        <task id="18" name="meeting 2 with the customer" color="#6666ff" meeting="false" start="2020-06-08" duration="10" complete="0" thirdDate="2020-01-01" thirdDate-constraint="0" expand="true"/>
+        <task id="20" name="publication of the finish product" color="#00ffff" meeting="false" start="2020-06-22" duration="15" complete="0" thirdDate="2020-01-01" thirdDate-constraint="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="PM" function="Default:1" contacts="" phone=""/>
+        <resource id="1" name="UI" function="1" contacts="" phone=""/>
+        <resource id="2" name="WD" function="2" contacts="" phone=""/>
+        <resource id="3" name="QA" function="3" contacts="" phone=""/>
+        <resource id="4" name="SA" function="4" contacts="" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="0" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="9" resource-id="0" function="Default:1" responsible="true" load="50.0"/>
+        <allocation task-id="18" resource-id="0" function="Default:1" responsible="true" load="100.0"/>
+        <allocation task-id="20" resource-id="0" function="Default:1" responsible="false" load="10.0"/>
+        <allocation task-id="11" resource-id="1" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="9" resource-id="1" function="1" responsible="false" load="25.0"/>
+        <allocation task-id="14" resource-id="2" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="20" resource-id="2" function="2" responsible="false" load="10.0"/>
+        <allocation task-id="9" resource-id="2" function="2" responsible="false" load="25.0"/>
+        <allocation task-id="16" resource-id="3" function="3" responsible="true" load="100.0"/>
+        <allocation task-id="20" resource-id="4" function="4" responsible="true" load="80.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles>
+        <role id="1" name="User-Interface Designer"/>
+        <role id="2" name="Web Developer"/>
+        <role id="3" name="Quality Assurance Tester"/>
+        <role id="4" name="Server Administrator"/>
+        <role id="5" name="Project Manager"/>
+    </roles>
+</project>
